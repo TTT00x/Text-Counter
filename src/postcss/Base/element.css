@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a,
+address, img, q, sub, sup, i,
+dl, dt, dd, ol, ul, li,
+form, label, button,
+table, caption, tbody, tfoot,
+tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+li {
+  display: block;
+  text-align: left;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+img {
+  vertical-align: bottom;
+  border: none;
+  background: transparent;
+}
+
+a {
+
+  &:focus,
+  &:active {
+    outline: 1px dotted;
+  }
+}
+
+input,
+select,
+option,
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:focus,
+  &:active {
+    outline: 1px dotted;
+  }
+}
+
+button {
+  background-color: transparent;
+  font: inherit;
+}

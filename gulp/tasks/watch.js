@@ -1,0 +1,9 @@
+const gulp = require('gulp');
+const paths = require('../paths');
+
+gulp.task('watch', () => {
+  gulp.watch([`${paths.SRC}pug/*.pug`, `${paths.SRC}pug/**/*.pug`], ['pugReload']);
+  gulp.watch([`${paths.SRC}css/*.css`, `${paths.SRC}css/**/*.css`], ['postcssReload']);
+  gulp.watch([`${paths.SRC}js/*.js`, `${paths.SRC}js/**/*.js`], ['jsReload']);
+  gulp.watch([`${paths.SRC}js/*.js`, `${paths.SRC}js/**/*.js`], ['lint']);
+});

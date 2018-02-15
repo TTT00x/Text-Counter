@@ -1,0 +1,6 @@
+@import "../_Include/include.css";
+
+body {
+  font-family: 'YuGothic', 'メイリオ', sans-serif;
+  color: $txt-color;
+}
