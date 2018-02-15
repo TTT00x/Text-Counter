@@ -1,0 +1,10 @@
+.main-TextBox {
+  resize: none;
+  height: 300px;
+  width: 100%;
+
+  &:focus {
+    background-color: #fdfbf8;
+    outline: none;
+  }
+}

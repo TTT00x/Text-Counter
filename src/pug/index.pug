@@ -20,11 +20,9 @@ html(lang="ja")
     meta(name="format-detection", content="telephone=no")
     link(rel='stylesheet', href=`${meta.dir}css/style.css`)
   body
-    h1 hello
-    h2 world
-    .checkbox-Wrapper
-      input.checkbox(type='checkbox', id='checkbox')
-      label.checkbox-Label(for='checkbox')
-        .checkbox-Symbol
-          +svg-use('check', '')(width='12', height='9', viewBox='0 0 12 9')
-        span チェックボックス
+    .main-Wrapper
+      h1.u-VisibilityHidden
+      textarea.main-TextBox
+      .main-ButtonWrapper
+        button.main-Button submit
+        button.main-Button ツイートする
