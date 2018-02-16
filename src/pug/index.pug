@@ -21,8 +21,10 @@ html(lang="ja")
     link(rel='stylesheet', href=`${meta.dir}css/style.css`)
   body
     .main-Wrapper
-      h1.u-VisibilityHidden
-      textarea.main-TextBox
+      h1.u-VisibilityHidden 文字数カウンター
+      textarea.main-TextBox#textBox
+      p.counter#counter
       .main-ButtonWrapper
         button.main-Button submit
         button.main-Button ツイートする
+    script(src='./js/bundle.js')
