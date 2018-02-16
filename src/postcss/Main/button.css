@@ -1,5 +1,31 @@
+.main-ButtonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
 .main-Button {
   border: 1px solid #333;
   color: #333;
+  display: block;
   font-size: 14px;
+  line-height: 100%;
+  margin-right: 16px;
+  padding: 7px;
+  text-decoration: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px #ddd;
+    outline: none;
+  }
 }
