@@ -3,6 +3,7 @@ class TextBox {
     this.doc = document;
     this.counter = this.doc.getElementById('counter');
     this.counterManuscript = this.doc.getElementById('counterManuscript');
+    this.counterPage = this.doc.getElementById('counterPage');
     this.praise = this.doc.getElementById('praise');
     this.praiseBtn = this.doc.getElementById('praiseBtn');
     this.countFunc = this.countFunc.bind(this);
@@ -18,8 +19,10 @@ class TextBox {
   countFunc() {
     this.length = this.textbox.value.length;
     this.numberOfPaper = Math.ceil(this.length / 400);
+    this.numberOfPage = Math.ceil(this.length / 1000);
     this.counter.innerHTML = this.length;
     this.counterManuscript.innerText = this.numberOfPaper;
+    this.counterPage.innerText = this.numberOfPage;
   }
   praiseFunc() {
     this.praise.setAttribute('aria-expanded', 'true');
