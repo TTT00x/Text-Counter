@@ -1,6 +1,7 @@
 .main-TextBox {
   border: 1px solid #333;
   color: #333;
+  display: block;
   font-size: 14px;
   line-height: 160%;
   resize: none;
