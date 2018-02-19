@@ -1,3 +1,38 @@
 .counter-Wrapper {
-  margin-top: 8px;
+  background-color: #347c83;
+  border-radius: 2px;
+  margin-top: 16px;
+  padding: 10px;
+}
+
+.counter-Letter {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: .3em;
+
+  span {
+    font-size: 24px;
+  }
+}
+
+.counter-Manuscript,
+.counter-Page {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: .1em;
+
+  span {
+    font-size: 24px;
+    margin-left: 8px;
+  }
+}
+
+.counter-SubTxt {
+  color: #fff;
+  font-size: 12px;
+
+  span {
+    font-size: 24px;
+  }
 }

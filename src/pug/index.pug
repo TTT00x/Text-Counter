@@ -24,22 +24,17 @@ html(lang="ja")
       h1.u-VisibilityHidden 文字数カウンター
       textarea.main-TextBox#textBox
       .counter-Wrapper
-        p 文字数:
-          |
-          =' '
+        p.counter-Letter
           span#counter 0
           |文字
-        p 原稿用紙換算:
-          |
-          =' '
+        p.counter-Manuscript
+          |400字詰原稿用紙
           span#counterManuscript 0
           |枚分
-        p A5テンプレート:
-          |
-          =' '
+        p.counter-Page
+          |A5原稿(目安)
           span#counterPage 0
           | ページ分
-        p ※目安です
       .main-ButtonWrapper
         button.main-Button#praiseBtn 褒める
       .main-ButtonWrapper.main-ButtonWrapper-tweet
