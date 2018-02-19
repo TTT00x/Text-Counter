@@ -4,11 +4,14 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 400px;
   position: fixed;
-  top: 20px;
+  top: calc(50% - 200px);
   left: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &[aria-expanded] {
     transition-property: visibility, opacity;
@@ -25,4 +28,10 @@
     visibility: hidden;
     opacity: 0;
   }
+}
+
+.praise-Word {
+  color: #24CBCF;
+  font-size: 56px;
+  text-align: center;
 }
