@@ -23,9 +23,19 @@ html(lang="ja")
     .main-Wrapper
       h1.u-VisibilityHidden 文字数カウンター
       textarea.main-TextBox#textBox
-      p.counter#counter
+      .counter-Wrapper
+        p 文字数:
+          |
+          = ' '
+          span#counter 0
+          |文字
+        p 原稿用紙換算:
+          |
+          = ' '
+          span#counterManuscript 0
+          |枚分
       .main-ButtonWrapper
-        button.main-Button submit
+        button.main-Button#praiseBtn submit
         a.main-Button(href='') ツイートする
     .praise#praise(aria-expanded='false')
     script(src='./js/bundle.js')
