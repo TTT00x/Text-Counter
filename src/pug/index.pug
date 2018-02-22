@@ -1,8 +1,8 @@
 -
   var meta = {
-    dir: '',
-    title: '',
-    description: '',
+    dir: './',
+    title: 'Text-Counter',
+    description: '文章の文字数を数えて、雑に褒めます。原稿や卒論にお使いください。',
     keywords: ''
   };
 
@@ -18,6 +18,7 @@ html(lang="ja")
     meta(name="format-detection", content="telephone=no")
     link(rel='stylesheet', href=`${meta.dir}css/style.css`)
   body
+    include ./_structure/_header
     .main-Wrapper
       h1.u-VisibilityHidden 文字数カウンター
       textarea.main-TextBox#textBox
@@ -38,6 +39,7 @@ html(lang="ja")
       .main-ButtonWrapper.main-ButtonWrapper-tweet
         a.main-Button_Tweet(href='') 今日の進捗としてツイートする
         a.main-Button_Tweet(href='') 原稿の進捗としてツイートする
+    include ./_structure/_footer
     .praise#praise(aria-expanded='false')
       p.praise-Word#praiseWord
     script(src='./js/bundle.js')

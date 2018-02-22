@@ -1,0 +1,54 @@
+.st-Footer {
+  margin-top: 64px;
+  padding: 16px;
+  width: 100%;
+}
+
+.st-Footer_Cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
+}
+
+.st-Footer_NavList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 32px;
+
+  li {
+    display: block;
+    list-style: none;
+    line-height: 100%;
+    margin-right: 16px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.st-Footer_Link {
+  color: #666;
+  font-size: 12px;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.st-Footer_Copyright {
+  color: #666;
+  font-size: 12px;
+
+  a {
+    color: #666;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
