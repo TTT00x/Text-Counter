@@ -37,8 +37,8 @@ html(lang="ja")
       .main-ButtonWrapper
         button.main-Button#praiseBtn 褒める
       .main-ButtonWrapper.main-ButtonWrapper-tweet
-        a.main-Button_Tweet(href='') 今日の進捗としてツイートする
-        a.main-Button_Tweet(href='') 原稿の進捗としてツイートする
+        a.main-Button_Tweet#tweetBtnForToday(href='') 今日の進捗としてツイートする
+        a.main-Button_Tweet#tweetBtnForManuscript(href='') 原稿の進捗としてツイートする
     include ./_structure/_footer
     .praise#praise(aria-expanded='false')
       p.praise-Word#praiseWord
